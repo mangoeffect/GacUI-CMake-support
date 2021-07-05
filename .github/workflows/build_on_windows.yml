@@ -8,6 +8,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+    - name: get-gacui-submodule
+      run: git submodule update --init --recursive
     - name: cmake
       run: cmake -S . -B build -G "Visual Studio 16 2019" 
     - name: build-debug
