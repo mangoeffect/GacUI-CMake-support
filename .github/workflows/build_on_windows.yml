@@ -1,0 +1,20 @@
+name: Build GacUI on Windows
+
+on: push
+
+jobs:
+  msvc2019:
+  runs-on: windows-latest
+
+  steps:
+  - uses: actions/checkout@v2
+  - name: cmake
+    run: cmake -S . -B build -G "Visual Studio 16 2019" 
+  - name: build-debug
+    run: cmake --build build --config Debug --parallel 10
+  - name: install-debug
+    run: cmake --install build --config Debug
+  - name: build-release
+    run: cmake --build build --config Release --parallel 10
+  - name: install-release
+    run: cmake --install build --config Release
