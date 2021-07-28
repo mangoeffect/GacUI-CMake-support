@@ -26,7 +26,7 @@ jobs:
       shell: pwsh
       run: |
         # 打包zip
-        Compress-Archive -Path install install.zip
+        Compress-Archive -Path install Gaclib_vc16_x64.zip
         # 记录环境变量packageName给后续step
         $name = "install"
         echo "::set-env name=packageName::$name"
