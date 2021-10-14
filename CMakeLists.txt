@@ -45,6 +45,11 @@ if(MSVC)
   set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} /bigobj")
 endif()
 
+# 打开允许创建文件夹的开关
+set_property(GLOBAL PROPERTY USE_FOLDERS ON)
+# 给cmake自动创建的工程重新命名
+set_property(GLOBAL PROPERTY PREDEFINED_TARGETS_FOLDER "CMakeTargets")
+
 # 设置宏定义
 add_definitions(-DUNICODE -D_UNICODE)
 add_definitions(-DLIB -D_LIB)
