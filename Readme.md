@@ -60,7 +60,6 @@ cmake -G "Visual Studio 16 2019" ..
 │  └─cmake
 │      └─GacUI
 │              GacUI-targets-debug.cmake
-│              GacUI-targets-minsizerel.cmake
 │              GacUI-targets-release.cmake
 │              GacUI-targets.cmake
 │              GacUIConfig.cmake
