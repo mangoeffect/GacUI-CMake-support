@@ -3,7 +3,7 @@ cmake_minimum_required(VERSION 3.14)
 project(GacUI CXX)
 
 # C++标准要求
-set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD 20)
 
 # 设置编译库文件版本后缀
 set(CMAKE_DEBUG_POSTFIX "d" CACHE STRING "add a postfix, usually d on windows")
