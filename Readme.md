@@ -3,7 +3,7 @@
 
 本项目旨在提供[GacUI](https://github.com/vczh-libraries/Release)库的CMake支持,使用CMake构建GacUI项目并打包安装，支持CMake通用格式导入连接到自己项目中。
 使用GacUI之前，请先阅读GacUI原许可[GacUI-License](https://github.com/vczh-libraries/Release/blob/master/LICENSE.md)
-# 特点
+# 功能
 
 - CMake构建方式,支持使用不同IDE编译(使用MVSC编译器)。
 - 安装导出库文件、Tools工具，库文件支持CMakeLists.txt直接导入
@@ -76,7 +76,7 @@ cmake -G "Visual Studio 16 2019" ..
         StartProcess.ps1
 ```
 
-# 如何导入GacUI
+# 如何使用CMake构建GacUI应用项目
 
 如果不熟悉或不想使用CMake构建项目，可以直接使用Visual Studio配置好属性表中的头文件目录(include)、库文件目录(lib)、附加依赖项(*.lib文件),可以参考GacUI原工程轮子哥的配置。以下为使用CMake导入GacUI到项目中的示例。
 
