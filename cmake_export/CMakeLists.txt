@@ -83,3 +83,4 @@ add_library(GacUIComplete STATIC ${GacUIComplete_SOURCES})
 target_link_libraries(GacUIComplete GacUI)
 
 add_subdirectory(lite)
+

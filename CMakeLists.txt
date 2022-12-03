@@ -68,9 +68,9 @@ target_include_directories(GacUILite INTERFACE $<INSTALL_INTERFACE:include>)
 install(FILES ${Headers} DESTINATION include)
 install(FILES ${Skins} DESTINATION include/Skins/DarkSkin)
 install(TARGETS GacUI GacUIComplete GacUILite
-    EXPORT GacUI-targets
-    LIBRARY DESTINATION lib
-    ARCHIVE DESTINATION lib
+	EXPORT GacUI-targets
+	LIBRARY DESTINATION lib
+	ARCHIVE DESTINATION lib
 )
 
 # 安装cmake配置文件
@@ -87,5 +87,6 @@ install(DIRECTORY  "${PROJECT_SOURCE_DIR}/gacui/Tools" DESTINATION .)
 
 include_directories(GacUI/Import)
 add_subdirectory(cmake_import)
+
 
 

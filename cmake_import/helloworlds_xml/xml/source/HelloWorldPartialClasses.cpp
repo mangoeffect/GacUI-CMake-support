@@ -34,16 +34,16 @@ Global Variables
 ***********************************************************************/
 
 BEGIN_GLOBAL_STORAGE_CLASS(vl_workflow_global_HelloWorld)
-vl_workflow_global::HelloWorld instance;
-INITIALIZE_GLOBAL_STORAGE_CLASS
-FINALIZE_GLOBAL_STORAGE_CLASS
+	vl_workflow_global::HelloWorld instance;
+	INITIALIZE_GLOBAL_STORAGE_CLASS
+	FINALIZE_GLOBAL_STORAGE_CLASS
 END_GLOBAL_STORAGE_CLASS(vl_workflow_global_HelloWorld)
 
 namespace vl_workflow_global
 {
-	/***********************************************************************
-	Global Functions
-	***********************************************************************/
+/***********************************************************************
+Global Functions
+***********************************************************************/
 
 	HelloWorld& HelloWorld::Instance()
 	{
@@ -62,10 +62,10 @@ namespace helloworld
 		(this->__vwsn_precompile_0 = __vwsn_this_);
 		(this->__vwsn_precompile_2 = ::vl::__vwsn::This(this->__vwsn_precompile_0)->GetContainerComposition());
 		{
-			::vl::__vwsn::This(this->__vwsn_precompile_2)->SetPreferredMinSize([&]() { ::vl::presentation::Size __vwsn_temp__; __vwsn_temp__.x = static_cast<::vl::vint>(480); __vwsn_temp__.y = static_cast<::vl::vint>(320); return __vwsn_temp__; }());
+			::vl::__vwsn::This(this->__vwsn_precompile_2)->SetPreferredMinSize([&](){ ::vl::presentation::Size __vwsn_temp__; __vwsn_temp__.x = static_cast<::vl::vint>(480); __vwsn_temp__.y = static_cast<::vl::vint>(320); return __vwsn_temp__; }());
 		}
 		{
-			::vl::__vwsn::This(this->__vwsn_precompile_0)->SetClientSize([&]() { ::vl::presentation::Size __vwsn_temp__; __vwsn_temp__.x = static_cast<::vl::vint>(480); __vwsn_temp__.y = static_cast<::vl::vint>(320); return __vwsn_temp__; }());
+			::vl::__vwsn::This(this->__vwsn_precompile_0)->SetClientSize([&](){ ::vl::presentation::Size __vwsn_temp__; __vwsn_temp__.x = static_cast<::vl::vint>(480); __vwsn_temp__.y = static_cast<::vl::vint>(320); return __vwsn_temp__; }());
 		}
 		{
 			::vl::__vwsn::This(this->__vwsn_precompile_0)->SetText(::vl::WString::Unmanaged(L"Hello, world!"));
@@ -74,7 +74,7 @@ namespace helloworld
 			(this->__vwsn_precompile_1 = new ::vl::presentation::controls::GuiLabel(::vl::presentation::theme::ThemeName::Label));
 		}
 		{
-			::vl::__vwsn::This(this->__vwsn_precompile_1)->SetFont(::vl::Nullable<::vl::presentation::FontProperties>([&]() { ::vl::presentation::FontProperties __vwsn_temp__; __vwsn_temp__.fontFamily = ::vl::WString::Unmanaged(L"Segoe UI"); __vwsn_temp__.size = static_cast<::vl::vint>(32); __vwsn_temp__.antialias = true; return __vwsn_temp__; }()));
+			::vl::__vwsn::This(this->__vwsn_precompile_1)->SetFont(::vl::Nullable<::vl::presentation::FontProperties>([&](){ ::vl::presentation::FontProperties __vwsn_temp__; __vwsn_temp__.fontFamily = ::vl::WString::Unmanaged(L"Segoe UI"); __vwsn_temp__.size = static_cast<::vl::vint>(32); __vwsn_temp__.antialias = true; return __vwsn_temp__; }()));
 		}
 		{
 			::vl::__vwsn::This(this->__vwsn_precompile_1)->SetText(::vl::WString::Unmanaged(L"Welcome to GacUI Library!"));
@@ -91,9 +91,9 @@ namespace helloworld
 	{
 	}
 
-	/***********************************************************************
-	Class (::helloworld::MainWindow)
-	***********************************************************************/
+/***********************************************************************
+Class (::helloworld::MainWindow)
+***********************************************************************/
 
 	MainWindow::MainWindow()
 		: ::vl::presentation::controls::GuiWindow(::vl::presentation::theme::ThemeName::Window)

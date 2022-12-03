@@ -7,6 +7,7 @@ using namespace vl::stream;
 void GuiMain()
 {
 	{
+
 #ifdef	CPP_XML_BIN
 		FileStream fileStream(CPP_XML_BIN, FileStream::ReadOnly);
 #else
