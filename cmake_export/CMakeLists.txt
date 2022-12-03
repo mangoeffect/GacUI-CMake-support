@@ -84,3 +84,5 @@ target_link_libraries(GacUIComplete GacUI)
 
 add_subdirectory(lite)
 
+
+set_target_properties(GacUI GacUILite GacUIComplete PROPERTIES FOLDER "GacUI")
