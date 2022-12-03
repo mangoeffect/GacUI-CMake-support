@@ -24,7 +24,7 @@ jobs:
     - name: package
       id: package      
       env:
-        archiveName: Gaclib_vc16_x64
+        archiveName: Gaclib_vc17_x64
         msvcArch: x64       
       shell: pwsh
       run: |
