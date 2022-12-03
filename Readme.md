@@ -4,7 +4,7 @@
 本项目旨在提供[GacUI](https://github.com/vczh-libraries/Release)库的CMake支持,使用CMake构建GacUI项目并打包安装，支持CMake通用格式导入连接到自己项目中。
 使用GacUI之前，请先阅读GacUI原许可[GacUI-License](https://github.com/vczh-libraries/Release/blob/master/LICENSE.md)
 
-**最新版本已更新至1.0.5.0**
+**最新版本已更新至1.1.2.0**
 
 # 功能
 
