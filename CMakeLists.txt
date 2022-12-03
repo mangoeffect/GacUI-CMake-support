@@ -85,8 +85,10 @@ install(FILES "${CMAKE_CURRENT_BINARY_DIR}/GacUIConfig.cmake" DESTINATION "lib/c
 # 安装工具
 install(DIRECTORY  "${PROJECT_SOURCE_DIR}/gacui/Tools" DESTINATION .)
 
-#include_directories(GacUI/Import)
+
+include_directories(GacUI/Import)
 #add_subdirectory(cmake_import)
 
+add_subdirectory(Tutorial)
 
 
