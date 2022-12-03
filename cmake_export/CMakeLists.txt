@@ -1,5 +1,6 @@
 
 include_directories(${PROJECT_SOURCE_DIR}/gacui/Import)
+include_directories(${PROJECT_SOURCE_DIR}/cmake_export)
 
 # GacUI
 if(WIN32)
@@ -77,6 +78,7 @@ file(GLOB_RECURSE GacUIComplete_SOURCES
 add_library(GacUI STATIC
   ${GacUI_SOURCES}
   "WinMain.cpp"
+  "lite/Version.cpp"
 )
 
 add_library(GacUIComplete STATIC ${GacUIComplete_SOURCES})

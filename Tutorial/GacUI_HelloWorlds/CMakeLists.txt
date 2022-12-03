@@ -13,4 +13,3 @@ foreach(tgt ${gacui_helloworlds_target_list})
     set_target_properties(${tgt} PROPERTIES FOLDER "Tutorial/HelloWorlds")
 endforeach(gacui_helloworlds_target_list)
 
-

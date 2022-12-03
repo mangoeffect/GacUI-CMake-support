@@ -1,9 +1,28 @@
 cmake_minimum_required(VERSION 3.14)
 
-project(GacUI CXX)
+project(GacUI VERSION 1.1.2.0  LANGUAGES CXX)
 
 # C++标准要求
 set(CMAKE_CXX_STANDARD 20)
+
+# 添加自定义cmake文件目录
+list(APPEND CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/cmake)
+# gitversion.cmake
+include(gitversion)
+# 获取当前的GIT_HASH
+set(GIT_HASH "")
+get_git_hash(GIT_HASH)
+message(STATUS "Git hash is ${GIT_HASH}")
+# 获取当前的分支
+set(GIT_BRANCH "")
+get_git_branch(GIT_BRANCH)
+message(STATUS "Git branch is ${GIT_BRANCH}")
+
+configure_file(
+  ${CMAKE_CURRENT_SOURCE_DIR}/include/git_version.h.in
+  ${CMAKE_CURRENT_SOURCE_DIR}/cmake_export/lite/Version.cpp
+  @ONLY
+  )
 
 # 设置编译库文件版本后缀
 set(CMAKE_DEBUG_POSTFIX "d" CACHE STRING "add a postfix, usually d on windows")
@@ -65,7 +84,7 @@ file(GLOB Skins "./gacui/Import/Skins/DarkSkin/*.h")
 target_include_directories(GacUI INTERFACE $<INSTALL_INTERFACE:include>) 
 target_include_directories(GacUIComplete INTERFACE $<INSTALL_INTERFACE:include>) 
 target_include_directories(GacUILite INTERFACE $<INSTALL_INTERFACE:include>) 
-install(FILES ${Headers} DESTINATION include)
+install(FILES ${Headers} "cmake_export/Version.h" DESTINATION include)
 install(FILES ${Skins} DESTINATION include/Skins/DarkSkin)
 install(TARGETS GacUI GacUIComplete GacUILite
 	EXPORT GacUI-targets

@@ -58,5 +58,6 @@ endif()
 
 add_library(GacUILite STATIC
   ${GacUILite_SOURCES}
-  WinMain.cpp
+  "WinMain.cpp"
+  "Version.cpp"
 )
