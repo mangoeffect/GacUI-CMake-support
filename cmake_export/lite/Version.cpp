@@ -13,11 +13,11 @@
 namespace vl
 {
     const std::string gac_git_branch = "master";
-    const std::string gac_git_hash = "4d92a48";
+    const std::string gac_git_hash = "cedfc03";
     const std::string gac_version_major = "1";
     const std::string gac_version_minor = "1";
-    const std::string gac_version_patch = "2";
-    const std::string gac_project_version = "1.1.2.0";
+    const std::string gac_version_patch = "3";
+    const std::string gac_project_version = "1.1.3.0";
 
 
     std::string GetGacUIGitBranch()

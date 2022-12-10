@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.14)
 
-project(GacUI VERSION 1.1.2.0  LANGUAGES CXX)
+project(GacUI VERSION 1.1.3.0  LANGUAGES CXX)
 
 # C++标准要求
 set(CMAKE_CXX_STANDARD 20)
